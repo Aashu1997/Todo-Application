@@ -23,7 +23,7 @@ public class MyDbHandler extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        String query = "CREATE TABLE " + Params.TABLE_NAME + "(" + Params.ID + " NUMBER PRIMARY KEY," + Params.MESSAGE +
+        String query = "CREATE TABLE " + Params.TABLE_NAME + "(" + Params.ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + Params.MESSAGE +
                   " TEXT," + Params.INSERTED_DATE + " TEXT" + ")";
         db.execSQL(query);
     }
