@@ -15,6 +15,11 @@ public class Record {
         public Record() {
         }
 
+    public Record(String message, String date) {
+        this.message = message;
+        this.date = date;
+    }
+
     public int getId() {
         return id;
     }

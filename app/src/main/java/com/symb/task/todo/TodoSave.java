@@ -41,7 +41,7 @@ public class TodoSave extends AppCompatActivity {
     {
         String msg = message.getText().toString();
 
-        Record record = new Record(0,msg,"");
+        Record record = new Record(msg,"");
 
         db.insertRecord(record);
 
